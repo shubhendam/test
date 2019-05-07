@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Set Appointment</title>
+		<link rel="stylesheet" type="text/css" href="Appointment.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css.map">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js">
+	</head>
+	<body>
+		<div class="form">
+			
+			<h1> Set Appointment!</h1>
+
+			<form action="Appointment.php" method="POST" >
+				<input type="text"  name="SPname"  placeholder="Service Provider Name" required><br>
+        		<input type="text"  name="name"  placeholder="Your Name" required><br>
+				<input type="text"  name="email"  placeholder="Email" required><br>
+				<input type="text"  name="time"  placeholder="Time(hrs)" required><br>
+				<input type="text"  name="address"  placeholder="Address" required><br>
+				<input type="text"  name="phn"  placeholder="Phone" maxlength = "10" minlength="10" required><br>
+	
+				<br>
+				<select  name="Stype" class="datalist" required>
+					<datalist id="Stype">
+					<option class="selp"  selected hidden value="" >Select The Services</option>
+					<option class="selq" value="Desktop">Desktop</option>
+					<option class="selq" value="Printer">Printer</option>
+					<option class="selq" value="Mobile/Tablet">Mobile/Tablet</option>
+					<option class="selq" value="Camera">Camera</option>
+					
+				</datalist></select>
+				
+				
+				<button type="submit" name="submit" >Done!</button>
+				
+			</form>
+		</div>
+	</body>
+</html>
